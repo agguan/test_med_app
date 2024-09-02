@@ -24,7 +24,9 @@ const Landing_Page = () => {
                   <div class="blue1 blob"></div> {/* Creating a different blue blob inside the second 'blob-cont' div */}
               </div>
             <h4>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque at quae ducimus. Suscipit omnis quibusdam non cum rem voluptatem!
+              "Embrace the art-of care, for a healthy mind and body forget the foundation of a vibrant life
+              Wellness is not just a destination; it's a journey of mindful choices and daily transformations. Nurture
+              you health with love, and watch it bloom into a beacon of joy and vitality"
             </h4>
             <a href="#services"> {/* Creating a hyperlink to jump to the 'services' section */}
               <button class="button">Get Started</button> {/* Creating a button with class name 'button' */}

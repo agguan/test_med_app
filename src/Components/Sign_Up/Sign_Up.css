@@ -5,13 +5,17 @@
     padding: 40px; /* Add padding inside the container */
     margin-top: 10%; /* Set top margin as a percentage of the viewport height */
     overflow: hidden; /* Hide any overflowing content */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center-align items horizontally */
 }
 
 /* Styles for the password visibility icon */
 .password-visibility {
-    position: relative; /* Set the position relative to its normal position */
-    top: -39px; /* Move the element 39 pixels up */
-    left: 92%; /* Move the element 92% to the right */
+    position: absolute; /* Set position to absolute for better control */
+    top: 50%; /* Center vertically relative to input field */
+    right: 10px; /* Position from the right edge */
+    transform: translateY(-50%); /* Adjust position to center vertically */
     cursor: pointer; /* Change cursor to pointer on hover */
     font-size: 17px; /* Set font size */
 }
@@ -19,21 +23,24 @@
 /* Styles for the grid layout of the signup form */
 .signup-grid {
     display: grid; /* Use grid layout for the element */
-    grid-template-columns: 0.1fr 1.5fr 8fr; /* Define columns with fractional widths */
-    grid-gap: 10px; /* Set the gap between grid items */
+    grid-template-columns: 1fr; /* Use one column for better centering */
+    grid-gap: 20px; /* Set the gap between grid items */
+    width: 100%; /* Set the grid width to 100% */
+    justify-items: center; /* Center-align grid items horizontally */
 }
 
 /* Styles for the main signup text */
 .signup-text {
     margin-top: 30px; /* Add top margin */
-    grid-column: 1 / 4; /* Span across all three columns */
     text-align: center; /* Center-align text */
+    width: 100%; /* Set width to 100% */
 }
 
 /* Styles for additional signup text */
 .signup-text1 {
-    grid-column: -1 / 3; /* Span from second to third column from the end */
-    text-align: right; /* Right-align text */
+    text-align: center; /* Center-align text */
+    width: 100%; /* Set width to 100% */
+    margin-bottom: 20px; /* Add bottom margin */
 }
 
 .signup-text1 span {
@@ -44,7 +51,9 @@
 
 /* Styles for the signup form section */
 .signup-form {
-    grid-column: 2 / 4; /* Span from second to fourth column */
+    width: 100%; /* Set width to 100% */
+    max-width: 500px; /* Set maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
 }
 
 /* Styles for the overall signup container */
@@ -53,6 +62,9 @@
     background-color: #fff; /* Set background color to white */
     padding: 40px; /* Add padding inside the element */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow with opacity */
+    width: 100%; /* Set width to 100% */
+    max-width: 600px; /* Set maximum width for the signup container */
+    margin: 0 auto; /* Center the signup container horizontally */
 }
 
 /* Styles for the signup heading */
@@ -72,8 +84,11 @@
 /* Styles for form groups in the signup form */
 .form-group {
     margin-bottom: 20px; /* Add bottom margin to form groups */
+    text-align: left; /* Left-align form groups */
+    width: 100%; /* Set width to 100% */
 }
 
+/* Label styles */
 .form-group label {
     display: block; /* Display labels as blocks */
     margin-bottom: 5px; /* Add bottom margin to labels */
@@ -82,7 +97,7 @@
 
 /* Styles for form controls in the signup form */
 .form-control {
-    width: 40%; /* Set width of form controls */
+    width: 100%; /* Set width of form controls to fill available space */
     padding: 8px; /* Add padding inside form controls */
     font-size: 16px; /* Set font size */
     border: 1px solid #ccc; /* Add border with color */
@@ -91,8 +106,10 @@
 
 /* Styles for button group in the signup form */
 .btn-group {
-    margin-top: .0001px; /* Add a small top margin to button group */
+    margin-top: 10px; /* Add a small top margin to button group */
     margin-bottom: 20px; /* Add bottom margin to button group */
+    text-align: center; /* Center-align the buttons */
+    width: 100%; /* Set width to 100% */
 }
 
 /* Styles for buttons in the signup form */
@@ -102,6 +119,8 @@
     border: none; /* Remove button borders */
     border-radius: 4px; /* Add border radius for rounded corners */
     cursor: pointer; /* Change cursor to pointer on hover */
+    width: 45%; /* Set button width to 45% */
+    margin: 0 5px; /* Add margin between buttons */
 }
 
 /* Styles for primary button in the signup form */
